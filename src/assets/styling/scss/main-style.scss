@@ -1,0 +1,8 @@
+// Global stylesheet where import all other stylesheets
+@import "~primeng/resources/themes/saga-blue/theme.css";
+@import "~primeng/resources/primeng.min.css";
+@import "~primeicons/primeicons.css";
+@import "~primeflex/primeflex.css";
+
+//Global
+@import "./global/global";

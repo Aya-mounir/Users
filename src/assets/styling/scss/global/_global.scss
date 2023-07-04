@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+
+  .grid,
+  .grid > .col,
+  .grid > [class*="col"] {
+    margin: 0;
+    padding: 0;
+  }
+}
