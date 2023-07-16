@@ -1,0 +1,21 @@
+<div class="single_product w-full min-h-screen flex justify-content-center align-items-center">
+
+  <div class="card flex justify-content-center">
+    <p-card [header]="singleProduct.title" [subheader]="singleProduct.brand" [style]="{ width: '360px' }">
+        <ng-template pTemplate="header">
+            <img alt="Card" [src]="singleProduct.images[0]" />
+        </ng-template>
+        <p>
+          <p-rating [ngModel]="singleProduct.rating" [readonly]="true" [cancel]="false"></p-rating>
+          <br>
+            {{ singleProduct.description }}<br>
+            {{ singleProduct.price }}<br>
+            {{ singleProduct.category }}<br>
+            {{ singleProduct.stock }}<br>
+            {{ singleProduct.discountPercentage | percent }} discount!!!<br>
+
+        </p>
+
+    </p-card>
+</div>
+</div>

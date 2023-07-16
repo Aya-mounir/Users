@@ -22,8 +22,12 @@ export class LoginComponent implements OnInit {
     });
   }
   submitLoginForm() {
-    this._AuthService.login(this.loginForm.value).subscribe((arg) => {
-      this._Router.navigate(['pages/home']);
-    });
+    if(this.loginForm.valid){
+      console.log("rrrrrrrrrrrr")
+      this._AuthService.login(this.loginForm.value).subscribe((res) => {
+        //console.log("aaaaaaa",res.message);
+          this._Router.navigate(['pages/home']);
+      });
+    }
   }
 }

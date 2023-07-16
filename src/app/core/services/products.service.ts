@@ -12,4 +12,7 @@ export class ProductsService {
   getAllProducts(): Observable<any> {
     return this._HttpClient.get('https://dummyjson.com/products');
   }
+  getOneProduct(id:any): Observable<any> {
+    return this._HttpClient.get(`https://dummyjson.com/products/${id}`);
+  }
 }

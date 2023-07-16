@@ -1,0 +1,33 @@
+<div class="nav_bar">
+  <div class="black grid flex justify-content-between py-2 px-7">
+    <div class="logo col-2  ">
+    <ul class="flex justify-content-between ">
+      <a routerLink="pages/home">home</a>
+      <a routerLink="auth/login">login</a>
+      <a routerLink="auth/register">register</a>
+    </ul>
+  </div>
+
+    <div class="right_content col-3 flex justify-content-end align-items-center">
+      <div class="search  mr-3"><i class="pi pi-search" style="font-size: 1rem"></i></div>
+      <div class="notification mr-3">
+        <p-overlayPanel #op>
+          <ng-template pTemplate="content">
+            <h4>Custom Content</h4>
+          </ng-template>
+        </p-overlayPanel>
+        <p-button (click)="op.toggle($event)" icon="pi pi-bell" label=""></p-button>
+      </div>
+      <div class="user_vector">
+        <p-overlayPanel #op>
+          <ng-template pTemplate="content">
+            <h4>Custom Content</h4>
+          </ng-template>
+        </p-overlayPanel>
+        <p-button (click)="op.toggle($event)" alt="">
+          <i class="pi pi-user"></i>
+        </p-button>
+      </div>
+    </div>
+  </div>
+</div>
