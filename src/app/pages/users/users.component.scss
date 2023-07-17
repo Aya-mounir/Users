@@ -1,0 +1,46 @@
+.users_pg {
+  .delete {
+    border: 1px red solid;
+    color: red;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  .update {
+    border: 1px green solid;
+    color: green;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  .add {
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px blue solid;
+    color: blue;
+  }
+  img {
+    border-radius: 100%;
+    border: none;
+  }
+}
+
+::ng-deep {
+  .dropdown_pg {
+    .p-dropdown-header {
+      width: 70% !important;
+    }
+    .p-dropdown-items {
+      p-dropdownitem:first-of-type {
+        position: absolute;
+        top: 0;
+        right: 19px;
+      }
+    }
+  }
+}

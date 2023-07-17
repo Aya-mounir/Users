@@ -1,7 +1,6 @@
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root',
@@ -12,7 +11,7 @@ export class ProductsService {
   getAllProducts(): Observable<any> {
     return this._HttpClient.get('https://dummyjson.com/products');
   }
-  getOneProduct(id:any): Observable<any> {
+  getOneProduct(id: any): Observable<any> {
     return this._HttpClient.get(`https://dummyjson.com/products/${id}`);
   }
 }
