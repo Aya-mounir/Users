@@ -14,9 +14,10 @@ import { DropdownModule } from 'primeng/dropdown';
 import { UsersComponent } from './users/users.component';
 import { TableModule } from 'primeng/table';
 import { MultiSelectModule } from 'primeng/multiselect';
+import { CatagoriesComponent } from './catagories/catagories.component';
 
 @NgModule({
-  declarations: [HomeComponent, SingleProductComponent, UsersComponent],
+  declarations: [HomeComponent, SingleProductComponent, UsersComponent,CatagoriesComponent],
   imports: [
     CommonModule,
     PagesRoutingModule,
@@ -29,6 +30,7 @@ import { MultiSelectModule } from 'primeng/multiselect';
     DropdownModule,
     TableModule,
     MultiSelectModule,
+
   ],
 })
 export class PagesModule {}

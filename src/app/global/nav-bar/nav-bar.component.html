@@ -3,8 +3,8 @@
     <div class="logo col-2  ">
       <ul class="flex justify-content-between ">
         <a routerLink="/pages/home">home</a>
-        <a routerLink="/auth/login">login</a>
         <a routerLink="/pages/users">users</a>
+        <a routerLink="/pages/catagories">catagories</a>
       </ul>
     </div>
     <div class="right_content col-3 flex justify-content-end align-items-center">
@@ -12,7 +12,16 @@
       <div class="notification mr-3">
         <p-overlayPanel #op>
           <ng-template pTemplate="content">
-            <h4>Custom Content</h4>
+            <div class="p-2">
+              <div class="mr-2">
+                <img width="50px" height="50px" [src]="user.image" alt="">
+              <div>
+                <div>{{user.kminchelle}}</div>
+                <div>{{user.firstName}} {{user.lastName}}</div>
+              </div>
+              </div>
+              {{user.email}}
+            </div>
           </ng-template>
         </p-overlayPanel>
         <p-button (click)="op.toggle($event)" icon="pi pi-bell" label=""></p-button>

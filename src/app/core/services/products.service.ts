@@ -14,4 +14,10 @@ export class ProductsService {
   getOneProduct(id: any): Observable<any> {
     return this._HttpClient.get(`https://dummyjson.com/products/${id}`);
   }
+  getCatagoryProducts(catagory: any): Observable<any> {
+    return this._HttpClient.get(`https://dummyjson.com/products/category/${catagory}`);
+  }
+  getAllCatagories(){
+    return this._HttpClient.get('https://dummyjson.com/products/categories');
+  }
 }

@@ -14,16 +14,9 @@ export class SingleProductComponent {
   }
   ngOnInit(): void {
     this.id= this._ActivatedRoute.snapshot.params['id'];
-    console.log("tttttt",this.id)
     this.singleProduct=this._ProductsService.getOneProduct(this.id).subscribe((res: any) => {
       this.singleProduct = res;
-      console.log("tttttt",res)
-
   });
   }
-  getOneProduct(){
-    this._ProductsService.getOneProduct(this.id).subscribe((res: any) => {
-      this.singleProduct = res;
-  });
-}
+
 }

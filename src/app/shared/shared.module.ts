@@ -7,8 +7,9 @@ import { NavBarComponent } from '../global/nav-bar/nav-bar.component';
 import { DropdownModule } from 'primeng/dropdown';
 import { OverlayPanelModule } from 'primeng/overlaypanel';
 import { ButtonModule } from 'primeng/button';
+import { FooterComponent } from '../global/footer/footer.component';
 @NgModule({
-  declarations: [AuthLayoutComponent, PagesLayoutComponent, NavBarComponent],
+  declarations: [AuthLayoutComponent, PagesLayoutComponent, NavBarComponent,FooterComponent],
   imports: [
     CommonModule,
     RouterModule,
