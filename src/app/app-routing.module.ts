@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthLayoutComponent } from './shared/layouts/auth-layout/auth-layout.component';
 import { PagesLayoutComponent } from './shared/layouts/pages-layout/pages-layout.component';
+import { authGuard } from './core/guards/auth.guard';
 
 const routes: Routes = [
   {
@@ -31,6 +32,7 @@ const routes: Routes = [
           import('./pages/pages.module').then((m) => m.PagesModule),
       },
     ],
+    canActivate: [authGuard],
   },
 ];
 

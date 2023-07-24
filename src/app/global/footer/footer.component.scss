@@ -9,13 +9,14 @@ html {
 }
 
 .footer-gray {
-  background-color: #EFEFEF;
+  background-color: #efefef;
   width: 100%;
 }
 
 .footer-custom {
   color: #888;
-  font: normal normal 12px/1.4 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font: normal normal 12px/1.4 "HelveticaNeue-Light", "Helvetica Neue Light",
+    "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   max-width: 1008px;
   box-sizing: border-box;
   margin: 0 auto;
@@ -36,7 +37,7 @@ html {
 
 .ftr-hdr {
   color: #000;
-  font: 22px/1.4 'BebasNeueRegular', BebasNeue, 'Bebas Neue', Arial, sans-serif;
+  font: 22px/1.4 "BebasNeueRegular", BebasNeue, "Bebas Neue", Arial, sans-serif;
   margin: 1em 0 0;
 }
 
@@ -81,7 +82,8 @@ html {
   margin: 0;
   padding: 3px 0;
   color: #888;
-  font: normal normal 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font: normal normal 12px "HelveticaNeue-Light", "Helvetica Neue Light",
+    "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   text-transform: uppercase;
   /*width: 150px;*/
 }
@@ -109,7 +111,10 @@ html {
 }
 
 @media only screen and (min-width: 768px) {
-  .footer-custom a, .footer-custom a:link, .footer-custom a:visited, .ftr-links-sub li .link {
+  .footer-custom a,
+  .footer-custom a:link,
+  .footer-custom a:visited,
+  .ftr-links-sub li .link {
     padding: 0;
   }
 }
@@ -130,12 +135,13 @@ html {
 }
 
 #ftrEmailForm #ftrEmailInput {
-  background: none repeat scroll 0 0 #FFF;
-  border: 1px solid #D6D6D6;
+  background: none repeat scroll 0 0 #fff;
+  border: 1px solid #d6d6d6;
   box-sizing: border-box;
   color: #888;
   float: left;
-  font: normal normal 14px/1.4 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font: normal normal 14px/1.4 "HelveticaNeue-Light", "Helvetica Neue Light",
+    "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   padding: 5px;
   width: 70%;
   height: 100%;
@@ -155,15 +161,22 @@ html {
   height: 100%;
   padding: 5px;
   float: left;
-  border: 1px solid #DFDFDF;
+  border: 1px solid #dfdfdf;
   box-sizing: border-box;
   color: #000;
-  font: normal bold 18px/1 BebasFamily, BebasNeueRegular, "Bebas Neue", Helvetica, Arial, sans-serif;
+  font: normal bold 18px/1 BebasFamily, BebasNeueRegular, "Bebas Neue",
+    Helvetica, Arial, sans-serif;
   text-align: center;
   text-transform: uppercase;
-  background: #FFF;
+  background: #fff;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #e1e1e1));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, white),
+    color-stop(100%, #e1e1e1)
+  );
   background: -webkit-linear-gradient(top, white 0, #e1e1e1 100%);
   background: -moz-linear-gradient(top, white 0, #e1e1e1 100%);
   background: -ms-linear-gradient(top, white 0, #e1e1e1 100%);
@@ -177,7 +190,7 @@ html {
 #ftrEmailForm .button:hover,
 #ftrEmailForm .button:active {
   background: black;
-  color: #FFF;
+  color: #fff;
   outline: none;
 }
 /* BEGIN SOCIAL STYLES*/
@@ -271,32 +284,4 @@ html {
 .footer-payment ul li {
   display: inline-block;
   margin: 0 6px;
-}
-
-@media only screen and (min-width: 1008px) {
-  .footer-payment ul li.ftr-stella {
-    margin-left: 0;
-  }
-}
-
-.ftr-bbb span,
-.ftr-stella span {
-  background-image: url("http://cache1.artprintimages.com/images/jump_pages/rebrand2/images/subnav2.png");
-  background-repeat: no-repeat;
-  background-color: transparent;
-  cursor: pointer;
-  display: inline-block;
-  height: 36px;
-  margin: 0;
-  padding: 0;
-}
-
-.ftr-bbb span {
-  background-position: -339px -8px;
-  width: 96px;
-}
-
-.ftr-stella span {
-  background-position: -339px -107px;
-  width: 57px;
 }
